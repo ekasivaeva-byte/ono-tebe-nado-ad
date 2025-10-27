@@ -1,18 +1,4 @@
-* {
-    box-sizing: border-box;
-}
 
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-header, main, footer {
-    width: 100vw;
-    margin: 0 auto;
-}
 
 header {
     display: grid;
@@ -108,10 +94,10 @@ h1 {
     position: relative;
     z-index: 3;
     display: flex;
+    gap: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 55%;
     margin: 0;
     padding: 0 50px;
 }
@@ -121,7 +107,7 @@ h1 span {
     font-family: Raleway;
     font-weight: 700;
     font-size: 100px;
-    line-height: 135%;
+    /* line-height: 135%; */
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -130,7 +116,6 @@ h1 span {
 
 .align_text1 {
     word-spacing: 20px;
-    text-align: left;
     width: 100%;
     align-self: flex-start;
 }
@@ -138,28 +123,27 @@ h1 span {
 .align_text2 {
     word-spacing: 20px;
     text-align: center;
+    margin-right: -0.3em;
     width: 100%;
 }
 
 .align_text3 {
     word-spacing: 20px;
     text-align: right;
+    margin-right: -0.3em;
     width: 100%;
     align-self: flex-end;
 }
 
 .description {
-    position: absolute;
+    position: relative;
     z-index: 3;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 106px 50px 0;
     align-content: center;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
 }
 
     .description p {
@@ -169,8 +153,8 @@ h1 span {
         font-style: Regular;
         font-size: 22px;
         line-height: 28px;
-        letter-spacing: 0.2em;
         text-transform: uppercase;
+        word-spacing: 20px;
     }
 
 button {
@@ -326,7 +310,7 @@ footer {
     grid-column: 2;
 }
 
-.footer address{
+.footer address {
     grid-column: 1;
     justify-self: start;
 }
